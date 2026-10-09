@@ -2,14 +2,10 @@
   "name": "My Dev Container",
   "customizations": {
     "vscode": {
-      "settings": {
-        "locale": "en"
-      },
       "extensions": [
         "GitHub.github-vscode-theme",
         "ms-toolsai.jupyter",
         "ms-python.python",
-        "ms-vscode.vscode-loc-en"
       ]
     }
   },
