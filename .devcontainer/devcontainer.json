@@ -1,14 +1,18 @@
 {
-  "settings": {
-    "locale": "en"
+  "name": "My Dev Container",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "locale": "en"
+      },
+      "extensions": [
+        "GitHub.github-vscode-theme",
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "ms-vscode.vscode-loc-en"
+      ]
+    }
   },
-  "extensions": [
-    "GitHub.github-vscode-theme",
-    "ms-toolsai.jupyter",
-    "ms-python.python",
-    "ms-vscode.vscode-loc-en"
-    // Additional Extensions Here
-  ],
-  "onCreateCommand": "[ -f requirements.txt ] && pip install -r requirements.txt; echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
+  "onCreateCommand": "[ -f requirements.txt ] && pip install -r requirements.txt; echo \"PS1='$ '\" >> ~/.bashrc", //Set Terminal Prompt to $
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
